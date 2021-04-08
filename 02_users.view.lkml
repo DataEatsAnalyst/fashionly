@@ -21,7 +21,7 @@ view: users {
     sql: ${TABLE}.last_name ;;
   }
 
-  dimension: name {
+  dimension: name_a {
     type: string
     sql: ${first_name} || ' ' || ${last_name} ;;
   }
@@ -136,6 +136,6 @@ view: users {
   }
 
   set: detail {
-    fields: [id, name, email, age, created_date, traffic_source]
+    fields: [id, name_a, email, age, created_date, traffic_source]
   }
 }
